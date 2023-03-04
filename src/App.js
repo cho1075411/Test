@@ -1,16 +1,24 @@
-import { useState } from 'react';
-import './App.css';
-import Page from './components/Page.jsx'
-import { ThemeContext } from './context/ThemeContext';
+import React,{useEffect, useRef} from "react";
 
-function App() {
-  const[isDark,setIsDark] = useState(false);
+const App = () => {
+  const inputRef = useRef();
 
-  return(
-    <ThemeContext.Provider value={{isDark,setIsDark}}>
-    <Page/>
-    </ThemeContext.Provider>
+  useEffect (() => {
+  //console.log(inputRef);
+  inputRef.current.focus();
+  },[]);
+
+  const login = () => {
+    alert('환영합니다');
+    inputRef.current.focus();
+  };
+
+  return (
+    <div>
+      <input ref={inputRef} type= 'text' placeholder="username"/>
+      <button onClick={login}>로그인</button>
+    </div>
   );
-}
+};
 
 export default App;
