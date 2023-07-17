@@ -1,0 +1,71 @@
+html {
+font-family: 'M PLUS Rounded 1c', sans-serif;
+/*  font-family: 'Poppins', sans-serif;*/
+}
+
+header {
+font-family: 'Poppins', sans-serif;
+text-align: center;
+font-size: 24px;
+font-weight: 700;
+padding: 24px;
+}
+footer {
+font-family: 'Poppins', sans-serif;
+text-align: center;
+font-size: 12px;
+padding: 14px;
+background-color: #000000;
+color: #ffffff;
+}
+
+.hero {
+background-image:  url(./images/hero.jpg);
+background-position: center;
+background-size: cover;
+height: 90vh;
+}
+section{
+    padding: 80px 0;
+}
+.row{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+
+@media only screen and (min-width:961px){
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col:first-child{
+    width: 40%;
+}
+.col:last-child{
+    width: 56%;
+}
+}
+
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+.heading{
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+li{
+    border-bottom:solid 1px lightgray;
+    padding: 20px 0;
+    font-size: 15px;
+}
+li span{
+    font-weight:  700;
+    display:  block;
+    margin-bottom: 10px;
+}
